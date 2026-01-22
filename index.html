@@ -14,16 +14,62 @@ EMAIL: jensonp@uci.edu
    <!-- you would link to an external stylesheet here! -->
    <!-- you would also link to Bootstrap here! -->
   <title>Jenson Phan Portfolio</title>
+  <meta name="viewport" content="width=device-width ,initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="flavicon.jpg">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+</style>
 </head>
 <body class="main">
   <div class="sub">
-    <h1 class="port">Portfolio</h1>
-    <h2 class="resume">Resume</h2>
-    <h2 class="github"><a href="https://github.com/jensonp" target="_self">Github</a></h2>
-    <h2 class="me"> <a href="me.html">About me</a> </h2>
-    <!-- <h2 class="?">?</h2> -->
-    <!-- <div>Div Test</div> -->
+    <nav class="nav">
+      <ul>
+        <li class="github"><a href="https://www.instagram.com/phan.jenson/">Instagram</a></li>
+        <li class="github"><a href="https://www.youtube.com/@jensonphan">Youtube</a></li>
+        <li class="github"><a href="https://www.linkedin.com/">LinkedIn</a></li>
+      </ul>
+    </nav>
+    <h1 class="port">Portfolio: Jenson Phan</h1>
+    <h2 class="github">Resume</h2>
+    <h2 class="github">
+      <a href="https://github.com/jensonp" target="_self">
+        <span class="sr-only">Github</span>
+        <span id="type"></span>
+      </a>
+
+    </h2>
+    <p class="desc" id="description">
+    </p>
+    <noscript>
+      <p class="desc"> Hello, my name is Jenson Phan. I am currently a senior at the University of California, Irvine pursuing a Bachelors of Science, Computer Science. My expected graduation date is 06/2026. </p>
+    </noscript>
+
   </div>
+  <video class="video" autoplay loop muted>
+    <source src="rotating-red-earth.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+    <img class="rickroll" src="egg-svgrepo-com.svg" alt="Link to Rick Roll Video">
+  </a>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#type', {
+      strings: ['Github'],
+      typeSpeed: 100,
+      showCursor: true, 
+      cursorChar: "_", 
+      startDelay: 1000
+    });
+  </script>
+  <script>
+    var typed = new Typed('#description', {
+      strings: ['Hello, my name is Jenson Phan. I am currently studying at the University of California, Irvine to earn a Bachelors of Science, Computer Science. My expected graduation date is 06/2026. '],
+      typeSpeed: 30,
+      startDelay: 1000,
+      showCursor: false
+    });
+  </script>
+
   <footer>
     <small>Copyright © Jenson Phan. All Rights Reserved. </small>
   </footer>
